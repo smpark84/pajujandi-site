@@ -5,8 +5,8 @@ backend:
 media_library:
   name: cloudinary
   config:
-    cloud_name: YOUR_CLOUD_NAME
-    api_key: YOUR_API_KEY
+    cloud_name: tsk3hpbt
+    api_key: 236987855417972
 
 publish_mode: simple
 locale: ko
