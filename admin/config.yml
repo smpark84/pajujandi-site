@@ -1,0 +1,143 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: YOUR_CLOUD_NAME
+    api_key: YOUR_API_KEY
+
+publish_mode: simple
+locale: ko
+
+collections:
+  - name: content
+    label: 사이트 콘텐츠
+    files:
+      - name: site
+        label: 사이트 전체 설정
+        file: content.json
+        fields:
+          - label: 사이트 기본 정보
+            name: site
+            widget: object
+            fields:
+              - { label: 회사명 앞부분, name: companyNamePrefix, widget: string }
+              - { label: 회사명 강조부분(골드색), name: companyNameGold, widget: string }
+              - { label: 카카오톡 채널 링크, name: kakaoLink, widget: string }
+              - { label: 전화번호, name: phone, widget: string }
+              - { label: 이메일, name: email, widget: string }
+              - { label: 주소, name: address, widget: string }
+              - { label: 운영시간, name: hours, widget: string }
+              - { label: 사업자등록번호, name: businessNumber, widget: string }
+              - { label: 대표자명, name: ceo, widget: string }
+
+          - label: 헤더 메뉴
+            name: header
+            widget: object
+            fields:
+              - label: 메뉴 목록
+                name: menu
+                widget: list
+                fields:
+                  - { label: 메뉴명, name: label, widget: string }
+                  - { label: 링크(#앵커), name: href, widget: string }
+
+          - label: 히어로 영역
+            name: hero
+            widget: object
+            fields:
+              - { label: 상단 라벨 문구, name: eyebrow, widget: string }
+              - { label: 타이틀 첫째줄, name: titleLine1, widget: string }
+              - { label: 타이틀 둘째줄, name: titleLine2, widget: string }
+              - { label: 설명 문구, name: description, widget: text }
+              - { label: 배경 사진, name: backgroundImage, widget: image }
+
+          - label: 통계 4칸
+            name: stats
+            widget: list
+            fields:
+              - { label: 수치, name: value, widget: string }
+              - { label: 라벨, name: label, widget: string }
+
+          - label: 회사소개
+            name: about
+            widget: object
+            fields:
+              - { label: 현장 사진, name: image, widget: image }
+              - label: 소개 문단
+                name: paragraphs
+                widget: list
+                field: { label: 문단, name: paragraph, widget: text }
+              - label: 소개 통계
+                name: stats
+                widget: list
+                fields:
+                  - { label: 수치, name: value, widget: string }
+                  - { label: 라벨, name: label, widget: string }
+
+          - label: "왜 저희인가요"
+            name: features
+            widget: object
+            fields:
+              - { label: 섹션 제목, name: title, widget: string }
+              - { label: 섹션 설명, name: description, widget: string }
+              - label: 카드 목록
+                name: items
+                widget: list
+                fields:
+                  - { label: 아이콘, name: icon, widget: select, options: [check, shield, clock, chart] }
+                  - { label: 제목, name: title, widget: string }
+                  - { label: 설명, name: desc, widget: string }
+
+          - label: 제품안내
+            name: products
+            widget: object
+            fields:
+              - { label: 섹션 제목, name: title, widget: string }
+              - { label: 섹션 설명, name: description, widget: string }
+              - label: 제품 목록
+                name: items
+                widget: list
+                fields:
+                  - { label: 태그, name: tag, widget: string }
+                  - { label: 사진, name: image, widget: image }
+                  - { label: 제목, name: title, widget: string }
+                  - { label: 설명, name: desc, widget: string }
+
+          - label: 시공사례 갤러리
+            name: gallery
+            widget: object
+            fields:
+              - { label: 섹션 제목, name: title, widget: string }
+              - { label: 섹션 설명, name: description, widget: string }
+              - label: 사진 목록
+                name: items
+                widget: list
+                fields:
+                  - { label: 사진, name: image, widget: image }
+                  - { label: 캡션, name: caption, widget: string }
+
+          - label: 고객후기
+            name: testimonials
+            widget: object
+            fields:
+              - { label: 섹션 제목, name: title, widget: string }
+              - { label: 섹션 설명, name: description, widget: string }
+              - label: 후기 목록
+                name: items
+                widget: list
+                fields:
+                  - { label: 별점(1~5), name: stars, widget: number, min: 1, max: 5, value_type: int }
+                  - { label: 후기 내용, name: quote, widget: text }
+                  - { label: 고객명, name: name, widget: string }
+                  - { label: 시공 종류, name: role, widget: string }
+
+          - label: 문의하기
+            name: contact
+            widget: object
+            fields:
+              - { label: 섹션 제목, name: title, widget: string }
+              - { label: 섹션 설명, name: description, widget: text }
+              - { label: 배경 사진, name: backgroundImage, widget: image }

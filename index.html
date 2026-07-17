@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>파주명품잔디 | 인조잔디 시공 전문</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;800&family=Noto+Serif+KR:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo" data-logo></div>
+    <nav>
+      <ul id="nav-menu"></ul>
+    </nav>
+    <a href="#contact" class="header-cta">견적 문의</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg" id="hero-bg"></div>
+  <div class="hero-content">
+    <span class="hero-eyebrow" id="hero-eyebrow"></span>
+    <h1 id="hero-title"></h1>
+    <p id="hero-desc"></p>
+    <div class="hero-buttons" id="hero-buttons"></div>
+  </div>
+</section>
+
+<div class="stats-strip" id="stats-strip"></div>
+
+<section class="about" id="about">
+  <div class="section-inner about-grid">
+    <div class="about-img">
+      <img id="about-img" alt="시공 현장 사진">
+    </div>
+    <div class="about-text">
+      <span class="eyebrow">About Us</span>
+      <h2>회사소개</h2>
+      <div id="about-paragraphs"></div>
+      <div class="about-stats" id="about-stats"></div>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="eyebrow">Why Us</span>
+      <h2 id="features-title"></h2>
+      <p id="features-desc"></p>
+    </div>
+    <div class="feature-grid" id="feature-grid"></div>
+  </div>
+</section>
+
+<section class="products" id="products">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="eyebrow">Products</span>
+      <h2 id="products-title"></h2>
+      <p id="products-desc"></p>
+    </div>
+    <div class="product-grid" id="product-grid"></div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="eyebrow">Portfolio</span>
+      <h2 id="gallery-title"></h2>
+      <p id="gallery-desc"></p>
+    </div>
+    <div class="gallery-grid" id="gallery-grid"></div>
+  </div>
+</section>
+
+<section class="testimonials">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="eyebrow">Reviews</span>
+      <h2 id="testi-title"></h2>
+      <p id="testi-desc"></p>
+    </div>
+    <div class="testi-grid" id="testi-grid"></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="section-inner">
+    <div class="section-title">
+      <span class="eyebrow">Contact</span>
+      <h2 id="contact-title"></h2>
+      <p id="contact-desc"></p>
+    </div>
+    <div class="contact-wrap">
+      <div>
+        <div class="contact-kakao" id="contact-kakao"></div>
+        <ul class="contact-info" id="contact-info"></ul>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('실제 서비스 연동 시 이 버튼으로 문의가 접수됩니다.');">
+        <div class="form-row">
+          <label>성함</label>
+          <input type="text" placeholder="이름을 입력해주세요" required>
+        </div>
+        <div class="form-row">
+          <label>연락처</label>
+          <input type="tel" placeholder="010-0000-0000" required>
+        </div>
+        <div class="form-row">
+          <label>시공 희망 지역 / 문의 내용</label>
+          <textarea placeholder="시공 위치, 평수, 원하는 제품 등을 남겨주세요"></textarea>
+        </div>
+        <button type="submit" class="form-submit">문의 남기기</button>
+        <p class="form-note">※ 프로토타입 단계로 실제 접수 기능은 연동 전입니다.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-logo" data-logo></div>
+  <p id="footer-info"></p>
+  <p style="margin-top:6px;">Copyright ⓒ 파주명품잔디. All rights reserved.</p>
+</footer>
+
+<script src="assets/main.js"></script>
+<script>
+if (window.netlifyIdentity) {
+  window.netlifyIdentity.on("init", user => {
+    if (!user) {
+      window.netlifyIdentity.on("login", () => {
+        document.location.href = "/admin/";
+      });
+    }
+  });
+}
+</script>
+</body>
+</html>

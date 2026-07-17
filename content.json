@@ -1,0 +1,109 @@
+{
+  "site": {
+    "companyName": "파주명품잔디",
+    "companyNameGold": "명품잔디",
+    "companyNamePrefix": "파주",
+    "kakaoLink": "http://pf.kakao.com/_jExafX/chat",
+    "phone": "000-0000-0000",
+    "email": "example@email.com",
+    "address": "경기도 파주시 OO구 (실제 주소로 교체)",
+    "hours": "평일 09:00 ~ 18:00 (주말/공휴일 휴무)",
+    "businessNumber": "000-00-00000",
+    "ceo": "OOO"
+  },
+  "header": {
+    "menu": [
+      { "label": "회사소개", "href": "#about" },
+      { "label": "왜 저희인가요", "href": "#features" },
+      { "label": "제품안내", "href": "#products" },
+      { "label": "시공사례", "href": "#gallery" },
+      { "label": "문의하기", "href": "#contact" }
+    ]
+  },
+  "hero": {
+    "eyebrow": "Since 20XX · 인조잔디 시공 전문",
+    "titleLine1": "믿을 수 있는 인조잔디 시공,",
+    "titleLine2": "파주명품잔디가 함께합니다",
+    "description": "조경·운동장·옥상·마당까지, 현장에 맞는 맞춤 인조잔디 시공을 제공합니다.",
+    "backgroundImage": "https://images.unsplash.com/photo-1610729866389-fbf90649c302?auto=format&fit=crop&w=1920&q=80"
+  },
+  "stats": [
+    { "value": "500+", "label": "시공 사례" },
+    { "value": "20년", "label": "업계 경력" },
+    { "value": "98%", "label": "고객 만족도" },
+    { "value": "3일", "label": "평균 시공 기간" }
+  ],
+  "about": {
+    "image": "https://images.unsplash.com/photo-1493538706211-316874a1e8b4?auto=format&fit=crop&w=900&q=80",
+    "paragraphs": [
+      "파주명품잔디는 오랜 현장 경험을 바탕으로 조경용·운동장용 인조잔디 시공을 전문으로 합니다.",
+      "정직한 시공, 합리적인 비용, 꼼꼼한 사후관리로 고객 만족을 최우선으로 생각합니다."
+    ],
+    "stats": [
+      { "value": "500+", "label": "누적 시공 건수" },
+      { "value": "20년", "label": "업계 경력" },
+      { "value": "A/S", "label": "사후관리 보장" }
+    ]
+  },
+  "features": {
+    "title": "왜 파주명품잔디인가요",
+    "description": "현장 경험을 바탕으로 한 확실한 시공 품질을 약속드립니다.",
+    "items": [
+      { "icon": "check", "title": "검증된 시공 품질", "desc": "현장 경험 기반의 꼼꼼한 시공 프로세스" },
+      { "icon": "shield", "title": "사후관리 보장", "desc": "시공 이후에도 지속적인 관리와 상담 제공" },
+      { "icon": "clock", "title": "신속한 시공 기간", "desc": "합리적인 일정 조율과 빠른 현장 대응" },
+      { "icon": "chart", "title": "투명한 견적", "desc": "현장 실측 후 정확하고 합리적인 견적 안내" }
+    ]
+  },
+  "products": {
+    "title": "제품 안내",
+    "description": "용도와 현장 상황에 맞는 다양한 인조잔디 제품을 제공합니다.",
+    "items": [
+      {
+        "tag": "조경용",
+        "image": "https://images.unsplash.com/photo-1630259900856-86e94006646e?auto=format&fit=crop&w=700&q=80",
+        "title": "조경용 인조잔디",
+        "desc": "마당, 테라스, 옥상 등 일반 조경 공간에 적합한 제품입니다."
+      },
+      {
+        "tag": "스포츠용",
+        "image": "https://images.unsplash.com/photo-1459865264687-595d652de67e?auto=format&fit=crop&w=700&q=80",
+        "title": "운동장/스포츠용",
+        "desc": "축구장, 테니스장 등 스포츠 시설에 최적화된 고내구성 제품입니다."
+      },
+      {
+        "tag": "반려동물용",
+        "image": "https://images.unsplash.com/photo-1734079692160-fcbe4be6ab96?auto=format&fit=crop&w=700&q=80",
+        "title": "반려동물 놀이터용",
+        "desc": "애견카페, 반려동물 놀이 공간에 어울리는 친환경 소재입니다."
+      }
+    ]
+  },
+  "gallery": {
+    "title": "시공사례",
+    "description": "실제 시공 현장 사진으로 교체될 갤러리 영역입니다.",
+    "items": [
+      { "image": "https://images.unsplash.com/photo-1610729866389-fbf90649c302?auto=format&fit=crop&w=800&q=75", "caption": "옥상 조경 시공" },
+      { "image": "https://images.unsplash.com/photo-1668120089662-42642838cfef?auto=format&fit=crop&w=500&q=75", "caption": "마당 시공" },
+      { "image": "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?auto=format&fit=crop&w=500&q=75", "caption": "테라스 시공" },
+      { "image": "https://images.unsplash.com/photo-1580642866497-dde93c97492b?auto=format&fit=crop&w=500&q=75", "caption": "카페 야외공간" },
+      { "image": "https://images.unsplash.com/photo-1610729866389-fbf90649c302?auto=format&fit=crop&w=800&q=75", "caption": "스포츠 시설 시공" },
+      { "image": "https://images.unsplash.com/photo-1630259900856-86e94006646e?auto=format&fit=crop&w=500&q=75", "caption": "반려동물 놀이터" },
+      { "image": "https://images.unsplash.com/photo-1493538706211-316874a1e8b4?auto=format&fit=crop&w=500&q=75", "caption": "정원 조경" }
+    ]
+  },
+  "testimonials": {
+    "title": "고객 후기",
+    "description": "실제 후기로 교체될 영역입니다.",
+    "items": [
+      { "stars": 5, "quote": "견적부터 시공까지 꼼꼼하게 진행해주셔서 만족스러웠습니다. 시공 후 관리까지 신경 써주셔서 좋았어요.", "name": "김OO 고객님", "role": "주택 마당 시공" },
+      { "stars": 5, "quote": "카페 야외 테라스 시공을 맡겼는데 손님들 반응이 정말 좋습니다. 다음에도 꼭 다시 맡기고 싶어요.", "name": "이OO 사장님", "role": "카페 테라스 시공" },
+      { "stars": 5, "quote": "학교 운동장 시공을 진행했는데 내구성도 좋고 관리도 편해서 만족합니다. 추천드려요.", "name": "박OO 담당자님", "role": "학교 운동장 시공" }
+    ]
+  },
+  "contact": {
+    "title": "견적 문의",
+    "description": "가격은 현장 상황에 따라 달라져 별도 표기하지 않습니다. 편하게 문의 남겨주시면 연락드립니다.",
+    "backgroundImage": "https://images.unsplash.com/photo-1621460248083-6271cc4437a8?auto=format&fit=crop&w=1600&q=70"
+  }
+}
