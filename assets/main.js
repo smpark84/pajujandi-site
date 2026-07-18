@@ -62,7 +62,7 @@ function render() {
     <div class="product-card">
       <div class="product-thumb">
         <span class="product-tag">${esc(p.tag)}</span>
-        <img src="${p.image}" alt="${esc(p.title)}">
+        <img src="${p.image}" alt="${esc(p.title)}" loading="lazy">
       </div>
       <div class="info">
         <h3>${esc(p.title)}</h3>
@@ -74,7 +74,7 @@ function render() {
   document.getElementById('gallery-desc').textContent = content.gallery.description;
   document.getElementById('gallery-grid').innerHTML = content.gallery.items.map(g => `
     <div class="gallery-item">
-      <img src="${g.image}" alt="${esc(g.caption)}">
+      <img src="${g.image}" alt="${esc(g.caption)}" loading="lazy">
       <div class="gallery-overlay"><span>${esc(g.caption)}</span></div>
     </div>`).join('');
 
